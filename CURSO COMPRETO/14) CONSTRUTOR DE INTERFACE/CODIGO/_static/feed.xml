@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+	<title> latest updates</title>
+	<atom:link href="feed" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description>latest updates from </description>
+	<language>en-gb</language>
+	
+		<item>
+		<title>CONSTRUTOR DE INTERFACE</title>
+		<link>/README</link>
+		<pubDate>Thu, 07 Dec 2023 20:34:54 -0000</pubDate>
+		<guid isPermaLink="true">/README</guid>
+		<description><![CDATA[O PAGE (Python Automatic GUI Generator) Ã© uma ferramenta grÃ¡fica para criar interfaces grÃ¡ficas de usuÃ¡rio (GUI) em Tkinter. Ele oferece uma abordagem…]]></description>
+		</item>
+	
+	</channel>
+</rss>
