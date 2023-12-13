@@ -45,3 +45,30 @@ Explicação do código:
 
 Ao executar este código, você deve ver uma janela com o rótulo "Olá, Tkinter!".
 
+# CARACTERÍSTICAS
+## POSITIVAS:
+- **Leve e Simples:** Tkinter é uma biblioteca leve e simples para a criação de interfaces gráficas em Python.
+
+- **Parte da Biblioteca Padrão:** Tkinter faz parte da biblioteca padrão do Python, o que significa que não é necessário instalar bibliotecas adicionais para começar a usá-lo.
+
+- **Multiplataforma:** Oferece suporte a múltiplos sistemas operacionais, incluindo Windows, Linux e macOS, proporcionando consistência em diferentes ambientes.
+
+- **Rápido Desenvolvimento:** Permite o desenvolvimento rápido de interfaces gráficas devido à sua simplicidade e à disponibilidade de widgets prontos para uso.
+
+- **Ampla Documentação:** Tkinter possui uma documentação abrangente e uma comunidade ativa, o que facilita o aprendizado e a resolução de problemas.
+
+- **Integração com Python:** Integra-se de maneira natural com o ecossistema Python, facilitando o desenvolvimento de aplicações GUI em conjunto com outras bibliotecas Python.
+
+## NEGATIVAS:
+- **Aparência Básica:** A aparência das interfaces criadas com Tkinter pode ser considerada básica em comparação com tecnologias mais avançadas.
+
+- **Limitações Gráficas:** Para aplicações que requerem recursos gráficos mais avançados, Tkinter pode apresentar limitações em comparação com outras bibliotecas GUI.
+
+- **Menos Flexibilidade de Layout:** Em comparação com algumas tecnologias mais avançadas, Tkinter oferece menos flexibilidade em termos de layout e posicionamento de componentes.
+
+- **Ferramentas de Design Limitadas:** As ferramentas de design visual para Tkinter são menos avançadas do que em algumas outras ferramentas GUI.
+
+- **Curva de Aprendizado Inicial:** Iniciantes podem enfrentar uma curva de aprendizado inicial ao trabalhar com Tkinter, especialmente se não estiverem familiarizados com GUI em Python.
+
+- **Personalização Limitada:** A personalização avançada da aparência dos widgets pode ser limitada em comparação com tecnologias mais robustas.
+
