@@ -1,7 +1,7 @@
 # CURSO DE TKINTER
 👨‍⚖️TKINTER É UMA BIBLIOTECA EM PYTHON PARA CRIAÇÃO DE INTERFACES GRÁFICAS. ELA PERMITE CRIAR JANELAS, BOTÕES, CAIXAS DE DIÁLOGO E OUTROS ELEMENTOS VISUAIS EM PROGRAMAS PYTHON.
 
-<img src="FOTO.png" align="center" width="400"> <br>
+<img src="IMAGEM.png" align="center" width="400"> <br>
 
 ## CONCEITO:
 Tkinter é um módulo em Python que permite a criação de interfaces gráficas de usuário (GUIs). O nome "Tkinter" deriva de "Tk interface", referindo-se ao toolkit Tk, um conjunto de ferramentas para construir interfaces gráficas, e "inter" de interface.
