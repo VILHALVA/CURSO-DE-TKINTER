@@ -65,6 +65,7 @@ Embora existam outras opções para o desenvolvimento de GUIs em Python, como Py
 - [CURSO FEITO PELO VILHALVA](https://github.com/VILHALVA)
 - [VEJA A DOCUMENTAÇÃO](https://docs.python.org/pt-br/3/library/tk.html)
 - [LINGUAGEM DE PROGRAMAÇÃO](https://github.com/VILHALVA/CURSO-DE-PYTHON)
+- [VEJA O MANUAL](./MANUAl.md)
 - [VEJA A SINTAXE](./SINTAXE.md)
 - [VEJA OS PROJETOS](https://github.com/VILHALVA?tab=repositories&q=+topic:TKINTER)
 
