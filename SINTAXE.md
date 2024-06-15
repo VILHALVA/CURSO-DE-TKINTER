@@ -1,30 +1,94 @@
 # SINTAXE
-Criar um projeto simples em Tkinter é uma ótima maneira de começar a explorar a criação de interfaces gráficas em Python. Abaixo, vou fornecer um exemplo de um projeto básico que consiste em uma janela com um botão que exibe uma mensagem quando clicado:
+## 1. CONFIGURANDO O TKINTER:
+Primeiro, precisamos importar o Tkinter e criar uma janela principal.
 
 ```python
 import tkinter as tk
-from tkinter import messagebox
-
-# Função para exibir uma mensagem quando o botão é clicado
-def mostrar_mensagem():
-    messagebox.showinfo("Mensagem", "Olá, mundo!")
 
 # Cria a janela principal
 root = tk.Tk()
-root.title("Projeto Tkinter")
+root.title("Exemplo de Tkinter")
+root.geometry("300x200")  # Define o tamanho da janela
+```
 
-# Cria um botão na janela
-botao = tk.Button(root, text="Clique-me!", command=mostrar_mensagem)
-botao.pack(pady=20)
+## 2. LABEL:
+Um label é um widget que exibe texto ou imagem.
 
-# Inicia o loop principal da aplicação
+```python
+# Cria um label
+label = tk.Label(root, text="Olá, Tkinter!", font=("Helvetica", 16))
+# Posiciona o label na janela
+label.pack(pady=20)
+```
+
+**Explicação:**
+- `tk.Label` cria um label. Aqui, passamos `root` como o pai do label.
+- `text` define o texto a ser exibido.
+- `font` define a fonte e o tamanho do texto.
+- `pack` é usado para posicionar o widget na janela. `pady` adiciona um preenchimento vertical.
+
+## 3. BOTÃO:
+Um botão é um widget que pode ser clicado para executar uma ação.
+
+```python
+# Função que será chamada quando o botão for clicado
+def on_button_click():
+    label.config(text="Botão clicado!")
+
+# Cria um botão
+button = tk.Button(root, text="Clique aqui", command=on_button_click)
+# Posiciona o botão na janela
+button.pack(pady=20)
+```
+
+**Explicação:**
+- `tk.Button` cria um botão. `command` define a função a ser chamada quando o botão for clicado.
+- `on_button_click` é uma função simples que muda o texto do label quando o botão é clicado.
+- `pack` posiciona o botão na janela.
+
+## 4. ENTRADA DE TEXTO (ENTRY):
+Um widget de entrada de texto permite ao usuário digitar texto.
+
+```python
+# Cria uma entrada de texto
+entry = tk.Entry(root, width=20)
+# Posiciona a entrada na janela
+entry.pack(pady=20)
+```
+
+**Explicação:**
+- `tk.Entry` cria um widget de entrada de texto. `width` define a largura do widget.
+- `pack` posiciona a entrada de texto na janela.
+
+## 5. COMBINAÇÃO DE WIDGETS:
+Vamos combinar todos os widgets acima em uma única aplicação.
+
+```python
+import tkinter as tk
+
+def on_button_click():
+    texto = entry.get()
+    label.config(text=f"Você digitou: {texto}")
+
+root = tk.Tk()
+root.title("Exemplo Completo de Tkinter")
+root.geometry("300x300")
+
+label = tk.Label(root, text="Digite algo:", font=("Helvetica", 16))
+label.pack(pady=10)
+
+entry = tk.Entry(root, width=20)
+entry.pack(pady=10)
+
+button = tk.Button(root, text="Clique aqui", command=on_button_click)
+button.pack(pady=10)
+
 root.mainloop()
 ```
 
-Neste projeto, importamos o módulo `tkinter` e o renomeamos como `tk` para facilitar a referência. Em seguida, importamos a classe `messagebox` do módulo `tkinter` para exibir caixas de mensagem. Criamos uma função `mostrar_mensagem()` que será chamada quando o botão for clicado, exibindo uma mensagem de diálogo simples.
+**Explicação:**
+- `entry.get()` obtém o texto digitado no widget de entrada.
+- `label.config(text=...)` altera o texto do label para exibir o texto digitado.
+- `root.mainloop()` inicia o loop principal da aplicação Tkinter, mantendo a janela aberta.
 
-Em seguida, criamos a janela principal (`root`) usando `tk.Tk()` e definimos um título para ela. Em seguida, criamos um botão usando `tk.Button()` e associamos a função `mostrar_mensagem()` ao evento de clique do botão usando o argumento `command`.
-
-Finalmente, usamos o método `pack()` para exibir o botão na janela e iniciamos o loop principal da aplicação com `root.mainloop()`.
-
-Este é apenas um exemplo simples para começar. Você pode expandir este projeto adicionando mais widgets, como caixas de entrada, rótulos e menus, para criar uma interface gráfica mais complexa e interativa. Experimente explorar a documentação do Tkinter para aprender mais sobre os recursos disponíveis e como utilizá-los em seus projetos.
+Esses são os conceitos básicos para trabalhar com Tkinter. Você pode combinar esses widgets e ajustar suas propriedades para criar interfaces mais complexas. 
